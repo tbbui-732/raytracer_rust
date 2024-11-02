@@ -1,3 +1,7 @@
+mod vec3;
+
 fn main() {
-    println!("Hello, world!");
+    let u: vec3::Vec3 = vec3::Vec3 { x: 1.0, y: 2.0, z: 3.0 };
+    let v: vec3::Vec3 = vec3::Vec3 { x: 4.0, y: 5.0, z: 6.0 };
+    println!("{}", u + v);
 }
